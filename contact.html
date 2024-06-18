@@ -1,0 +1,86 @@
+<html lang="pl">
+    <head>
+        <!-- Writed by Dorian Namyślak :> -->
+        <meta charset="UTF-8">
+        <title>Fauna Service</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Dorian Namyślak">
+        <meta name="description" content="Faunaservice.pl">
+        <link rel="stylesheet" href="stylemain.css">
+        <link rel="stylesheet" href="responsible.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="icon" href="logotyp.svg" type="image/x-icon">
+        <link rel="x-icon" href="logotyp.svg" type="image/x-icon">
+        <link rel="shortcut icon" href="logotyp.svg">
+        <link rel="fluid-icon" type="image/png" href="logotyp.svg">
+        <link rel="logo" type="image/png" href="logotyp.svg">
+        <script text="text/javascript" src="scripts/index.js"></script>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v10.0" nonce="xht62enU"></script>
+    </head>
+    <body>
+        <section id="Hamburger3" class="overlay-ham">
+            <a href="javascript:void(0)" class="closeHam" id="closeHamId3" onclick="closeHamF()">&times;</a>
+            <div class="overlay-ham-content" id="overlay-content-id3">
+                <a href="index.html" style="color: #b1eb04;">Home</a>
+                <a href="aboutus.html">o nas</a>
+                <a href="offer.html">oferta</a>
+                <a href="contact.html">kontakt</a>
+                <a href="form.html">Zamów transport</a>
+            </div>
+        </section>
+        <div class="container" role="main">
+            <span id="kotwica1"></span>
+            <section class="con-header" id="top-header">
+                <a class="con-header-logo" href="index.html">
+                    <img id="top-logo" src="logotyp.svg" alt="Błąd: Nie udało się załadować obrazka.">
+                </a>
+                <div class="con-header-links" id="con-header-links-id">
+                    <span style="cursor:pointer" class="ham-open" onclick="openHamE()">&#9776;</span>
+                    <a class="con-header-links-link" href="aboutus.html">o nas</a>
+                        <hr class="con-header-hr" style="position: absolute; margin-left: 50px;" color="#bfdc12">
+                    <a class="con-header-links-link" href="offer.html">oferta</a>
+                        <hr class="con-header-hr" style="position: absolute; margin-left: 235px;" color="#bfdc12">
+                    <a class="con-header-links-link" href="contact.html">kontakt</a>
+                        <hr class="con-header-hr" style="position: absolute; margin-left: 435px;" color="#bfdc12">
+                </div>
+                <div class="con-header-button" onclick="goto()">
+                    <p class="button-event" id="button-event">Zamów transport</p>
+                </div>
+            </section>
+            <section class="content-contact">
+                <div class="contact-main">
+                    <p class="contact-main-title">skontaktuj się</p>
+                    <p class="contact-subtitle">Podchodzimy indywidualnie do każdego transportowanego zwierzaka</p>
+                    <p class="contact-text-1">
+                        Przystosowujemy się do przewozu każdego zwierzęcia indywidualnie.<br>
+                        Chcesz dowiedzieć się więcej? Zapraszam do kontaktu.
+                    </p>
+                    <p class="contact-text-2">
+                        Napisz maila klikając w poniży przycisk lub zadzwoń. <br>
+                        660 540 785 pn-sb 9:00-18:00
+                    </p>
+                    <div style="display: flex; align-items: center; justify-content: center;">
+                        <div class="con-contact-button" style="text-align: center" onclick="goto()">
+                            <p id="button-event" style="float: none">Zamów transport</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="contact-fb">
+                    Zapraszamy do odwiedzenia naszego <br>
+                    fanpage na facebook'u <br>
+                    
+                    <a href="https://www.facebook.com/faunaservicepl" target="_blank">
+                        <img src="img/fb.png" class="contact-fb-img">
+                    </a>
+                </p>
+                <section class="footer-last" style="margin-bottom: 0;margin-top: 75px;">
+                    <section class="footer-box" onclick="fbGoto()" style="cursor: pointer;" target="_blank">
+                        <a href="https://facebook.com/faunaservicepl" class="ft-left" onclick="fbGoto()" style="cursor: pointer;">biuro.faunaservice@gmail.com | facebook</a>
+                    </section>
+                <a class="ft-right">All rights reserved FaunaService 2021 Made by NamyślakTeam</a>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

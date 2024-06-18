@@ -1,0 +1,273 @@
+<html lang="pl">
+    <head>
+        <!-- Writed by Dorian Namyślak :> -->
+        <meta charset="UTF-8">
+        <title>Fauna Service</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Dorian Namyślak">
+        <meta name="keywords" content="a, zwierzęta, transport, profesjonalizm, faunaservice, faunaservicepl, fauna">
+        <link rel="stylesheet" href="stylemain.css">
+        <link rel="stylesheet" href="responsible.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="icon" href="logotyp.svg" type="image/x-icon">
+        <link rel="x-icon" href="logotyp.svg" type="image/x-icon">
+        <link rel="shortcut icon" href="logotyp.svg">
+        <link rel="fluid-icon" type="image/png" href="logotyp.svg">
+        <link rel="logo" type="image/png" href="logotyp.svg">
+        <script src="scripts/index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v10.0" nonce="xht62enU"></script>
+    </head>
+    <body>
+        <section id="Hamburger" class="overlay-ham">
+            <a href="javascript:void(0)" class="closeHam" id="closeHamId" onclick="closeHam()">&times;</a>
+            <div class="overlay-ham-content" id="overlay-content-id">
+                <a href="index.html" style="color: #b1eb04;">Home</a>
+                <a id="ham-link-1" onmouseover="hamLinkAnimationOver1()" onmouseout="hamLinkAnimationOut1()" href="aboutus.html">o nas</a>
+                <a id="ham-link-2" onmouseover="hamLinkAnimationOver2()" onmouseout="hamLinkAnimationOut2()" href="offer.html">oferta</a>
+                <a id="ham-link-3" onmouseover="hamLinkAnimationOver3()" onmouseout="hamLinkAnimationOut3()" href="contact.html">kontakt</a>
+                <a id="ham-link-4" onmouseover="hamLinkAnimationOver4()" onmouseout="hamLinkAnimationOut4()" href="form.html">Zamów transport</a>
+            </div>
+        </section>
+        <div class="container" role="main">
+            <span id="kotwica1"></span>
+            <section class="con-header" id="top-header">
+                <a class="con-header-logo" href="index.html">
+                    <img id="top-logo" src="logotyp.svg" alt="Błąd: Nie udało się załadować obrazka.">
+                </a>
+                <div class="con-header-links" id="con-header-links-id">
+                    <span style="cursor:pointer" class="ham-open" onclick="openHam()">&#9776;</span>
+                    <a class="con-header-links-link" href="aboutus.html">o nas</a>
+                        <hr class="con-header-hr" style="position: absolute; margin-left: 50px;" color="#bfdc12">
+                    <a class="con-header-links-link" href="offer.html">oferta</a>
+                        <hr class="con-header-hr" style="position: absolute; margin-left: 235px;" color="#bfdc12">
+                    <a class="con-header-links-link" href="contact.html">kontakt</a>
+                        <hr class="con-header-hr" style="position: absolute; margin-left: 435px;" color="#bfdc12">
+                </div>
+                <div class="con-header-button" onclick="goto()">
+                    <p class="button-event" id="button-event">Zamów transport</p>
+                </div>
+            </section>
+            <section class="content">
+                <div id="slider">
+                    <figure class="global-mask">
+                        <div id="slider-text-1" class="slide-img">
+                            <span id="nav-mask-1"></span>
+                            <!--<img src="img/fs_0_slajder1.jpg" alt="Błąd: Nie udało się załadować obrazka."> -->
+                            <section class="slide-text-con" id="slide-1">
+                                <h1 class="slide-text-title" id="slide-text-title-id">Pracujemy dla zwierząt</h1>
+                                <p class="slide-text-subtitle" id="slide-text-subtitle-id">
+                                    Jesteśmy profesjonalną firmą zajmującą się odpowiedzialnym transportem zwierząt.<br>
+                                    Dobro zwierzęcia podczas podróży to nasz priorytet. Po prostu.</p>
+                                <a class="slide-button" href="aboutus.html" id="slide-button-id">nasza misja</a>
+                                <div class="navigation">
+                                    <label for="nav-mask-1" class="nav-class" style="background-color: #fff;"></label>
+                                    <label for="nav-mask-2" class="nav-class"></label>
+                                    <label for="nav-mask-3" class="nav-class"></label>
+                                </div>
+                            </section>
+                        </div>
+                        <div id="slider-text-2" class="slide-img">
+                            <span id="nav-mask-2"></span>
+                            <!--<img src="img/fs_0_slajder2.jpg" alt="Błąd: Nie udało się załadować obrazka.">-->
+                            <section class="slide-text-con" id="slide-2">
+                                <h1 class="slide-text-title" id="slide-text-title-id-2">Jesteśmy profesjonalistami</h1>
+                                <p class="slide-text-subtitle" id="slide-text-subtitle-id-2">
+                                    Jesteśmy przygotowani najlepiej jak się da by zapewnić bezpieczną podróż dla Twojego zwierzaka. <br>
+                                    Dobro zwierzęcia podczas podróży to nasz priorytet. Po prostu.</p>
+                                <a class="slide-button" href="aboutus.html" id="slide-button-id-2">nasza misja</a>
+                                <div class="navigation">
+                                    <label for="nav-mask-1" class="nav-class"></label>
+                                    <label for="nav-mask-2" class="nav-class" style="background-color: #fff;"></label>
+                                    <label for="nav-mask-3" class="nav-class"></label>
+                                </div>
+                            </section>
+                        </div>
+                        <div id="slider-text-3" class="slide-img">
+                            <span id="nav-mask-3"></span>
+                            <!--<img src="img/fs_0_slajder3.jpg" alt="Błąd: Nie udało się załadować obrazka.">-->
+                            <section class="slide-text-con" id="slide-3">
+                                <h1 class="slide-text-title" id="slide-text-title-id-3">Nie tylko zwierzęta domowe</h1>
+                                <p class="slide-text-subtitle" id="slide-text-subtitle-id-3">
+                                    Jesteśmy specjalistami w transportowaniu nie tylko zwierząt domowych, ale również egzotycznych. <br>
+                                    Transportujemy ssaki, ptactwo, płazy oraz gady. </p>
+                                <a class="slide-button" href="aboutus.html" id="slide-button-id-3">nasza misja</a>
+                                <div class="navigation">
+                                    <label for="nav-mask-1" class="nav-class"></label>
+                                    <label for="nav-mask-2" class="nav-class"></label>
+                                    <label for="nav-mask-3" class="nav-class"style="background-color: #fff;"></label>
+                                </div>
+                            </section>
+                        </div>
+                    </figure>
+                </div>
+                <section class="under-slider-text">
+                    <p class="under-slider-title" style="cursor: default;">Uważamy, że...</p>
+                    <p class="under-slider-subtitle" style="cursor: default;">
+                        Zwierzęta powinny mieć zapewnione bezpieczeństwo i komfort podróży. <br>
+                        Zwierzę to nie paczka, a my nie jesteśmy firmą kurierską.</p>
+                </section>
+                <hr style="width: 55px;margin-bottom: 50px; height: 2px;" color="#bfdc12">
+                <center class="gmask">
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffaunaservicepl%2Fposts%2F696070568542632&show_text=true&width=500" width="500" height="735" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffaunaservicepl%2Fposts%2F694310815385274&show_text=true&width=500" width="500" height="615" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffaunaservicepl%2Fposts%2F694309585385397&show_text=true&width=500" width="500" height="697" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </center>
+            </section>
+            <footer class="con-footer">
+                <p class="footer-title">skontaktuje się</p>
+                <p class="footer-text">Podchodzimy indywidualnie do każdego transportowanego zwierzaka</p>
+                <p class="footer-subtitle">
+                    Przystosowujemy się do przewozu każdego zwierzęcia indywidualnie. Chcesz dowiedzieć się więcej? <br>
+                    Zapraszamy do kontaktu. Napisz maila klikając w poniższy przycisk lub zadzwoń. <br>
+                    660 540 785 pn-sb 9:00-18:00
+                </p>
+                <div class="footer-button" onclick="goto()">
+                    <p id="button-event-footer">napisz do nas</p>
+                </div>
+                <div class="footer-last">
+                    <section class="footer-box" onclick="fbGoto()" style="cursor: pointer;" target="_blank">
+                        <a href="https://facebook.com/faunaservicepl" class="ft-left" onclick="fbGoto()" style="cursor: pointer;">biuro.faunaservice@gmail.com | facebook</a>
+                    </section>
+                    <a class="ft-right">All rights reserved FaunaService 2021 Made by NamyślakTeam</a>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script>
+        // Title
+        var title1 = document.getElementById("slide-text-title-id");
+        var title2 = document.getElementById("slide-text-title-id-2");
+        var title3 = document.getElementById("slide-text-title-id-3");
+    
+            $(document).ready(function () {
+                setTimeout(function () {
+                    $(title1).css("opacity", "1");
+                    $(title1).css("transition", "0.5s");
+                }, 500);
+                setTimeout(function () {
+                    $(title1).css("opacity", "0");
+                }, 9000);
+                setTimeout(function () {
+                    $(title1).css("opacity", "1");
+                }, 20000);
+            });
+    
+            $(document).ready(function () {
+                setTimeout(function () {
+                    $(title2).css("opacity", "1");
+                    $(title2).css("transition", "0.5s");
+                }, 11500);
+                setTimeout(function () {
+                    $(title2).css("opacity", "0");
+                }, 18000);
+                setTimeout(function () {
+                    $(title2).css("opacity", "1");
+                }, 20000);
+            });
+    
+            $(document).ready(function () {
+                setTimeout(function () {
+                    $(title3).css("opacity", "1");
+                    $(title3).css("transition", "0.5s");
+                }, 21000);
+                setTimeout(function () {
+                    $(title3).css("opacity", "0");
+                }, 25500);
+                setTimeout(function () {
+                    $(title3).css("opacity", "1");
+                }, 31500);
+            });
+        // Subtitle
+        var stitle1 = document.getElementById("slide-text-subtitle-id");
+        var stitle2 = document.getElementById("slide-text-subtitle-id-2");
+        var stitle3 = document.getElementById("slide-text-subtitle-id-3");
+    
+            $(document).ready(function () {
+                setTimeout(function () {
+                    $(stitle1).css("opacity", "1");
+                    $(stitle1).css("transition", "0.5s");
+                }, 1000);
+                setTimeout(function () {
+                    $(stitle1).css("opacity", "0");
+                }, 9500);
+                setTimeout(function () {
+                    $(stitle1).css("opacity", "1");
+                }, 20000);
+            });
+    
+            $(document).ready(function () {
+                setTimeout(function () {
+                    $(stitle2).css("opacity", "1");
+                    $(stitle2).css("transition", "0.5s");
+                }, 12000);
+                setTimeout(function () {
+                    $(stitle2).css("opacity", "0");
+                }, 18500);
+                setTimeout(function () {
+                    $(stitle2).css("opacity", "1");
+                }, 23000);
+            });
+    
+            $(document).ready(function () {
+                setTimeout(function () {
+                    $(stitle3).css("opacity", "1");
+                    $(stitle3).css("transition", "0.5s");
+                }, 21500);
+                setTimeout(function () {
+                    $(stitle3).css("opacity", "0");
+                }, 26000);
+                setTimeout(function () {
+                    $(stitle3).css("opacity", "1");
+                }, 31500);
+            });
+        // Button
+        var but1 = document.getElementById("slide-button-id");
+        var but2 = document.getElementById("slide-button-id-2");
+        var but3 = document.getElementById("slide-button-id-3");
+    
+            $(document).ready(function () {
+                setTimeout(function () {
+                    $(but1).css("opacity", "1");
+                    $(but1).css("transition", "0.5s");
+                }, 1500);
+                setTimeout(function () {
+                    $(but1).css("opacity", "0");
+                }, 10000);
+                setTimeout(function () {
+                    $(but1).css("opacity", "1");
+                }, 17000);
+            });
+    
+            $(document).ready(function () {
+                setTimeout(function () {
+                    $(but2).css("opacity", "1");
+                    $(but2).css("transition", "0.5s");
+                }, 12500);
+                setTimeout(function () {
+                    $(but2).css("opacity", "0");
+                }, 19000);
+                setTimeout(function () {
+                    $(but2).css("opacity", "1");
+                }, 25000);
+            });
+    
+            $(document).ready(function () {
+                setTimeout(function () {
+                    $(but3).css("opacity", "1");
+                    $(but3).css("transition", "0.5s");
+                }, 22000);
+                setTimeout(function () {
+                    $(but3).css("opacity", "0");
+                }, 26500);
+                setTimeout(function () {
+                    $(but3).css("opacity", "1");
+                }, 31500);
+            });
+        </script>
+         <script>
+            AOS.init();
+        </script>
+</html>

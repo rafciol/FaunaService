@@ -1,0 +1,190 @@
+<html lang="pl">
+    <head>
+        <!-- Writed by Dorian Namyślak :> -->
+        <meta charset="UTF-8">
+        <title>Fauna Service</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Dorian Namyślak">
+        <meta name="description" content="Faunaservice.pl">
+        <link rel="stylesheet" href="stylemain.css">
+        <link rel="stylesheet" href="responsible.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="icon" href="logotyp.svg" type="image/x-icon">
+        <link rel="x-icon" href="logotyp.svg" type="image/x-icon">
+        <link rel="shortcut icon" href="logotyp.svg">
+        <link rel="fluid-icon" type="image/png" href="logotyp.svg">
+        <link rel="logo" type="image/png" href="logotyp.svg">
+        <script src="scripts/index.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v10.0" nonce="xht62enU"></script>
+    </head>
+    <body>
+        <section id="Hamburger2" class="overlay-ham">
+            <a href="javascript:void(0)" class="closeHam" id="closeHamId2" onclick="closeHamD()">&times;</a>
+            <div class="overlay-ham-content" id="overlay-content-id2">
+                <a href="index.html" style="color: #b1eb04;">Home</a>
+                <a id="ham-link-1" onmouseover="hamLinkAnimationOver1()" onmouseout="hamLinkAnimationOut1()" href="aboutus.html">o nas</a>
+                <a id="ham-link-2" onmouseover="hamLinkAnimationOver2()" onmouseout="hamLinkAnimationOut2()" href="offer.html">oferta</a>
+                <a id="ham-link-3" onmouseover="hamLinkAnimationOver3()" onmouseout="hamLinkAnimationOut3()" href="contact.html">kontakt</a>
+                <a id="ham-link-4" onmouseover="hamLinkAnimationOver4()" onmouseout="hamLinkAnimationOut4()" href="form.html">Zamów transport</a>
+            </div>
+        </section>
+        <div class="container" role="main">
+            <span id="kotwica1"></span>
+            <section class="con-header" id="top-header">
+                <a class="con-header-logo" href="index.html">
+                    <img id="top-logo" src="logotyp.svg" alt="Błąd: Nie udało się załadować obrazka.">
+                </a>
+                <div class="con-header-links" id="con-header-links-id">
+                    <span style="cursor:pointer" class="ham-open" onclick="openHamC()">&#9776;</span>
+                    <a class="con-header-links-link" href="aboutus.html">o nas</a>
+                        <hr class="con-header-hr" style="position: absolute; margin-left: 50px;" color="#bfdc12">
+                    <a class="con-header-links-link" href="offer.html">oferta</a>
+                        <hr class="con-header-hr" style="position: absolute; margin-left: 235px;" color="#bfdc12">
+                    <a class="con-header-links-link" href="contact.html">kontakt</a>
+                        <hr class="con-header-hr" style="position: absolute; margin-left: 435px;" color="#bfdc12">
+                </div>
+                <div class="con-header-button" onclick="goto()">
+                    <p class="button-event" id="button-event">Zamów transport</p>
+                </div>
+            </section>
+            <section class="content">
+                <div class="under-header-about-2">
+                   <section class="under-header-title-con">
+                    <p class="under-header-title">Nasz zakres działania</p>
+                    <p class="under-header-subtitle">
+                        Jesteśmy przygotowani do transportu różnych gatunków zwierząt. Od zwierząt domowych, towarzyszących <br>
+                        po zwierzęta egzotyczne. Ssaki, ptaki, gady, płazy, kopytne.
+                    </p>
+                   </section>
+                </div>
+                <section class="con-about">
+                    <div class="about-title">
+                        <p class="about-title-text-1">jesteśmy profesjonalistami</p>
+                        <p class="about-title-text-2">
+                            Każdy transport traktujemy indywidualnie. Każde zwierzę nawet w obrębie <br>
+                            jednego gatunku wymaga innego podejścia, ma inne potrzeby.
+                    </div>
+                </section>
+                <hr style="width: 55px;margin-bottom: 50px; height: 2px;" color="#bfdc12">
+                <section class="con-offer-items">
+                    <div id="item-1" class="item-con" data="right">
+                        <div class="item-wrapper">
+                            <p class="item-title">zwierzęta towarzyszące</p>
+                            <p class="item-subtitle">Psy i koty</p>
+                            <p class="item-text">
+                                Transportowaliśmy psy i koty ze schronisk, z fundacji, hodowli <br>
+                                oraz od osób prywatnych. Każdy nasz pasażer w zależności od <br>
+                                rasy, wieku, stanu zdrowia oraz kondycji psychicznej traktowany <br>
+                                jest indywidualnie. 
+                            </p>
+                        </div>
+                        <img class="item-img" src="img/fs_2_galeria1.jpg" data-aos="fade-left" data-aos-duration="10000" data-aos-delay="250">
+                    </div>
+                    <div id="item-2" class="item-con" data="left">
+                        <img class="item-img" src="img/fs_2_galeria2.jpg" data-aos="fade-right" data-aos-duration="10000" data-aos-delay="250">
+                        <div class="item-wrapper-right">
+                            <p class="item-title">zwierzęta gospodarskie</p>
+                            <p class="item-subtitle">Kozy, owce i alpaki</p>
+                            <p class="item-text">
+                                Transportowaliśmy owce, kozy oraz alpaki dla prywatnych <br>
+                                hodowców zarówno na terenie Polski, ale także w obrębie <br>
+                                Europy. Wiemy jakie wymagania trzeba spełnić by<br>
+                                bezpiecznie przetransportować takie gatunki. 
+                            </p>
+                        </div>
+                    </div>
+                    <div id="item-3" class="item-con" data="right">
+                        <div class="item-wrapper">
+                            <p class="item-title">Gady i płazy</p>
+                            <p class="item-subtitle">Jaszczurki, węże, żółwie, warany, żaby</p>
+                            <p class="item-text">
+                                Transportowaliśmy liczne bardzo wymagające gatunki zarówno <br>
+                                dla prywatnych hodowców jak i dla ogrodów zoologicznych na <br>
+                                terenie Polski jak i Europy. Gady i płazy to wyjątkowo <br>
+                                wymagający pasażerowie. Dysponujemy wyposażeniem tj. <br>
+                                czujnikami temperatur i wilgotności  aby bezpiecznie <br> 
+                                przetransportować dany gatunek.
+                            </p>
+                        </div>
+                        <img class="item-img" src="img/fs_2_galeria3.jpg" data-aos="fade-left" data-aos-duration="10000" data-aos-delay="250">
+                    </div>
+                    <div id="item-4" class="item-con" data="left">
+                        <img class="item-img" src="img/fs_2_galeria4.jpg" data-aos="fade-right" data-aos-duration="10000" data-aos-delay="250">
+                        <div class="item-wrapper-right">
+                            <p class="item-title">zwierzęta niebezpieczne</p>
+                            <p class="item-subtitle">Krokodyle, węże jadowite oraz drapieżniki</p>
+                            <p class="item-text">
+                                Posiadamy duże doświadczenie w odłapywaniu oraz <br>
+                                transporcie gatunków niebezpiecznych. Transportowaliśmy <br> 
+                                krokodyle, węże jadowite, średnie koty drapieżne etc. <br>
+                                Każdy taki transport jest szczególnie zabezpieczony.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="item-5" class="item-con" data="right">
+                        <div class="item-wrapper">
+                            <p class="item-title">zwierzęta egzotyczne</p>
+                            <p class="item-subtitle">Naczelne, antylopy, ptaki egzotyczne </p>
+                            <p class="item-text">
+                                Korzystając z własnego doświadczenia hodowlanego transport <br>
+                                żurawi, flamingów, lemurów, skunksów czy antylopy nie <br>
+                                stanowią dla nas problemu. Przywoziliśmy już wiele gatunków <br>
+                                zwierząt zawsze z zachowaniem należytej ostrożności oraz <br>
+                                zapewniając zwierzętom dobrostan w czasie transportu. 
+                            </p>
+                        </div>
+                        <img class="item-img" src="img/fs_2_galeria5.jpg" data-aos="fade-left" data-aos-duration="10000" data-aos-delay="250"> 
+                    </div>
+                    <div id="item-6" class="item-con" data="left">
+                        <img class="item-img" src="img/fs_2_galeria6.jpg" data-aos="fade-right" data-aos-duration="10000" data-aos-delay="250">
+                        <div class="item-wrapper-right">
+                            <p class="item-title">gatunki rodzime</p>
+                            <p class="item-subtitle">Wilki, sarny, ptaki drapieżne</p>
+                            <p class="item-text">
+                                Wielokrotnie zabezpieczaliśmy oraz transportowaliśmy <br>
+                                gatunki zwierząt z naszej rodzimej fauny, zwierzęta dzikie <br>
+                                bardzo podatne na stres wymagają szczególnej, <br>
+                                specjalistycznej opieki, którą zapewniamy każdemu <br>
+                                zwierzęciu.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="offer-footer-con">
+                    <p class="offer-footer-title">dodatkowe usługi</p>
+                    <p class="offer-footer-subtitle">
+                        Oprócz transportu zwierząt zajmujemy się też odłapywaniem i zabezpieczeniem <br>
+                        zwierząt towarzyszących, hodowlanych oraz dzikożyjących. <br>
+                        Obcy pies na posesji, ucieczka krowy w las czy wilk we wnykach. <br>
+                        Jesteśmy kompetentni by się tym zająć.
+                    </p>
+                    <hr style="width: 55px;margin-top: 50px; height: 2px;" color="#000">
+                </section>
+            </section>
+            <footer class="con-footer">
+                <p class="footer-title">skontaktuje się</p>
+                <p class="footer-text">Podchodzimy indywidualnie do każdego transportowanego zwierzaka</p>
+                <p class="footer-subtitle">
+                    Przystosowujemy się do przewozu każdego zwierzęcia indywidualnie. Chcesz dowiedzieć się więcej? <br>
+                    Zapraszamy do kontaktu. Napisz maila klikając w poniższy przycisk lub zadzwoń. <br>
+                    660 540 785 pn-sb 9:00-18:00
+                </p>
+                <div class="footer-button" onclick="goto()">
+                    <p id="button-event-footer">napisz do nas</p>
+                </div>
+                <div class="footer-last">
+                    <section class="footer-box" onclick="fbGoto()" style="cursor: pointer;" target="_blank">
+                        <a href="https://facebook.com/faunaservicepl" class="ft-left" onclick="fbGoto()" style="cursor: pointer;">biuro.faunaservice@gmail.com | facebook</a>
+                    </section>
+                    <a class="ft-right">All rights reserved FaunaService 2021 Made by NamyślakTeam</a>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script>
+        AOS.init();
+    </script>
+</html>

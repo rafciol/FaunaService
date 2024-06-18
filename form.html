@@ -1,0 +1,118 @@
+<html lang="pl">
+    <head>
+        <!-- Writed by Dorian Namyślak :> -->
+        <meta charset="UTF-8">
+        <title>Fauna Service</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Dorian Namyślak">
+        <meta name="description" content="Faunaservice.pl">
+        <link rel="stylesheet" href="stylemain.css">
+        <link rel="stylesheet" href="responsible.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="icon" href="logotyp.svg" type="image/x-icon">
+        <link rel="x-icon" href="logotyp.svg" type="image/x-icon">
+        <link rel="shortcut icon" href="logotyp.svg">
+        <link rel="fluid-icon" type="image/png" href="logotyp.svg">
+        <link rel="logo" type="image/png" href="logotyp.svg">
+        <script text="text/javascript" src="scripts/index.js"></script>
+    </head>
+    <body class="body-form">
+        <section id="Hamburger4" class="overlay-ham">
+            <a href="javascript:void(0)" class="closeHam" id="closeHamId4" onclick="closeHamH()">&times;</a>
+            <div class="overlay-ham-content" id="overlay-content-id4">
+                <a href="index.html" style="color: #b1eb04;">Home</a>
+                <a href="aboutus.html">o nas</a>
+                <a href="offer.html">oferta</a>
+                <a href="contact.html">kontakt</a>
+                <a href="form.html">Zamów transport</a>
+            </div>
+        </section>
+        <span id="kotwicaform"></span>
+        <div class="container">
+            <section class="con-header" id="top-header">
+                <a class="con-header-logo" href="index.html">
+                    <img id="top-logo" src="logotyp.svg" alt="Błąd: Nie udało się załadować obrazka.">
+                </a>
+                <div class="con-header-links" id="con-header-links-id">
+                    <span style="cursor:pointer" class="ham-open" onclick="openHamG()">&#9776;</span>
+                    <a class="con-header-links-link" href="aboutus.html">o nas</a>
+                        <hr class="con-header-hr" style="position: absolute; margin-left: 50px;" color="#bfdc12">
+                    <a class="con-header-links-link" href="offer.html">oferta</a>
+                        <hr class="con-header-hr" style="position: absolute; margin-left: 235px;" color="#bfdc12">
+                    <a class="con-header-links-link" href="contact.html">kontakt</a>
+                        <hr class="con-header-hr" style="position: absolute; margin-left: 435px;" color="#bfdc12">
+                </div>
+                <div class="con-header-button" onclick="goto()">
+                    <p class="button-event" id="button-event">Zamów transport</p>
+                </div>
+            </section>
+            <section class="con-form">
+
+                <article id="contact">
+                    <p class="contact-title">Poniżej znajduje się nasz formularz informacyjny, który znacząco usprawni naszą współpracę. <br>
+                        Formularz podzielony jest na dane właściciela, informacje dotyczące zwierzęcia oraz miejsca odbioru i miejsca docelowego. <br>
+                        Na dole znajduje się też wolne miejsce do wpisania dodatkowych ważnych informacji.
+                    </p>
+
+                    <form method="POST" name="contactform" action="mail.php" id="formularz" spellcheck="true">
+                        <div class="dane-wlasciciel">
+                            <p class="dane-wlasciciel-title">dane właściciela</p>
+                            <input type="text" name="name" id="name" size="40" maxlength="16" placeholder="Imię*" required>
+                            <hr style="" color="#bfdc12">
+                            <input type="text" name="surname" id="surname" size="40" maxlength="24" placeholder="Nazwisko*" required>
+                            <hr style="" color="#bfdc12">
+                            <input type="email" name="email" id="mail" size="40" maxlength="48" placeholder="Email*" required>
+                            <hr style="" color="#bfdc12">
+                            <input type="tel" name="phone" id="phone" size="40" maxlength="14" placeholder="Telefon kontaktowy*" required>
+                            <hr style="" color="#bfdc12">
+                        </div>
+                        <div class="dane-zwierze">
+                            <p class="dane-wlasciciel-title">informacje o zwierzęciu</p>
+                            <input type="text" name="type" id="type" size="40" maxlength="40" placeholder="Gatunek/rasa*" required>
+                            <hr style="" color="#bfdc12">
+                            <input type="text" name="age" id="age" size="40" min="0" max="99" maxlength="2" placeholder="Wiek* (data naroodzin/przybliżony wiek)" required>
+                            <hr style="" color="#bfdc12">
+                            <input type="text" name="size" id="size" size="40" maxlength="16" placeholder="Wysokość* (wysokość w cm, waga w kg)" required>
+                            <hr style="" color="#bfdc12">
+                            <input type="text" name="animalname" id="animalname" size="40" placeholder="Imię" maxlength="12">
+                            <hr style="" color="#bfdc12">
+                        </div>
+                        <div class="dane-transport">
+                            <p class="dane-wlasciciel-title">informacja o transporcie</p>
+                            <input type="text" name="placepick" id="placepick" size="40" maxlength="28" placeholder="Miejsce odbioru* (kraj/miasto)" required>
+                            <hr style="" color="#bfdc12">
+                            <input type="text" name="destination" id="destination" size="40" maxlength="28" placeholder="Miejsce docelowe* (kraj/miasto)" required>
+                            <hr style="" color="#bfdc12">
+                            <br><label for="term" class="label-term">Preferowany termin*</label>
+                            <input type="date" name="term" id="term" size="40" maxlength="20" required>
+                            <hr style="" color="#bfdc12">
+                            <input style="visibility: hidden;" type="text" name="nulll" id="nulll" maxlength="0">
+                            <hr style="visibility: hidden;" color="#bfdc12">
+                        </div>
+                        <div class="wiadomosc">
+                            <label class="wiadomosc-title" for="message">
+                                Dodatkowe, ważne informacje dotyczące<br>
+                                zwierzęcia (np. choroby, alergie,<br>
+                                przyjmowane leki)*
+                            </label>
+                            <br>
+                            <textarea name="message" id="message" rows="4" cols="35" maxlength="256" required></textarea>
+                        </div>
+                        <button type="submit" id="sub-button">wyślij</button>
+                    </form>
+                    <p class="star-title">* pole zaznaczone gwiazdką są konieczne do wypełnienia formularza z zapytaniem. <br> 
+                    Pozwoli nam to w pełni i rzeczowo odpowiedzieć na zapytanie.</p>
+                </article>
+                <div class="contact-footer">
+                    <div class="footer-left">
+                        <a class="footer-email" href="#kotwicaform">biuro.faunaservice@gmail.com</a>
+                        <span> | </span> 
+                        <a class="footer-fb" href="https://facebook.com/faunaservicepl" target="_blank">facebook</a>
+                    </div>
+                    <a class="footer-right">All rights reserved FaunaService 2021 Made by NamyślakTeam</a>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

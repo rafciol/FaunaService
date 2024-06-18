@@ -1,0 +1,160 @@
+<html lang="pl">
+    <head>
+        <!-- Writed by Dorian Namyślak :> -->
+        <meta charset="UTF-8">
+        <title>Fauna Service</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Dorian Namyślak">
+        <meta name="description" content="Faunaservice.pl">
+        <link rel="stylesheet" href="stylemain.css">
+        <link rel="stylesheet" href="responsible.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="icon" href="logotyp.svg" type="image/x-icon">
+        <link rel="x-icon" href="logotyp.svg" type="image/x-icon">
+        <link rel="shortcut icon" href="logotyp.svg">
+        <link rel="fluid-icon" type="image/png" href="logotyp.svg">
+        <link rel="logo" type="image/png" href="logotyp.svg">
+        <script src="scripts/index.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v10.0" nonce="xht62enU"></script>
+    </head>
+    <body>
+        <section id="Hamburger1" class="overlay-ham">
+            <a href="javascript:void(0)" class="closeHam" id="closeHamId1" onclick="closeHamB()">&times;</a>
+            <div class="overlay-ham-content" id="overlay-content-id1">
+                <a href="index.html" style="color: #b1eb04;">Home</a>
+                <a id="ham-link-1" onmouseover="hamLinkAnimationOver1()" onmouseout="hamLinkAnimationOut1()" href="aboutus.html">o nas</a>
+                <a id="ham-link-2" onmouseover="hamLinkAnimationOver2()" onmouseout="hamLinkAnimationOut2()" href="offer.html">oferta</a>
+                <a id="ham-link-3" onmouseover="hamLinkAnimationOver3()" onmouseout="hamLinkAnimationOut3()" href="contact.html">kontakt</a>
+                <a id="ham-link-4" onmouseover="hamLinkAnimationOver4()" onmouseout="hamLinkAnimationOut4()" href="form.html">Zamów transport</a>
+            </div>
+        </section>
+        <div class="container" role="main">
+            <span id="kotwica1"></span>
+            <section class="con-header" id="top-header">
+                <a class="con-header-logo" href="index.html">
+                    <img id="top-logo" src="logotyp.svg" alt="Błąd: Nie udało się załadować obrazka.">
+                </a>
+                <div class="con-header-links" id="con-header-links-id">
+                    <span style="cursor:pointer" class="ham-open" onclick="openHamA()">&#9776;</span>
+                    <a class="con-header-links-link" href="aboutus.html">o nas</a>
+                        <hr class="con-header-hr" style="position: absolute; margin-left: 50px;" color="#bfdc12">
+                    <a class="con-header-links-link" href="offer.html">oferta</a>
+                        <hr class="con-header-hr" style="position: absolute; margin-left: 235px;" color="#bfdc12">
+                    <a class="con-header-links-link" href="contact.html">kontakt</a>
+                        <hr class="con-header-hr" style="position: absolute; margin-left: 435px;" color="#bfdc12">
+                </div>
+                <div class="con-header-button" onclick="goto()">
+                    <p class="button-event" id="button-event">Zamów transport</p>
+                </div>
+            </section>
+            <section class="content">
+                <div class="under-header-about">
+                   <section class="under-header-title-con">
+                    <p class="under-header-title">Jesteśmy profesjonalistami</p>
+                    <p class="under-header-subtitle">
+                        Jesteśmy przygotowani najlepiej jak się da by zapewnić bezpieczną podróż dla Twojego zwierzaka. <br> 
+                        Dobro zwierzęcia podczas podróży to nasz priorytet. Po prostu. 
+                    </p>
+                   </section>
+                </div>
+                <section class="con-about">
+                    <div class="about-title">
+                        <p class="about-title-text-1">jesteśmy profesjonalistami</p>
+                        <p class="about-title-text-2">
+                            Spełniamy wszystkie wymagania prawne dotyczące transportu <br>
+                            zwierząt zarówno w Polsce jak i Europie. Posiadamy wszystkie wymagane <br>
+                            pozwolenia oraz licencje.</p>
+                    </div>
+                </section>
+                <hr style="width: 55px;margin-bottom: 50px; height: 2px;" color="#bfdc12">
+                <section class="about-main">
+                    <div class="about-sec-1" data-aos="zoom-in-down" data-aos-duration="10000">
+                    <div id="about-main-con-1" class="about-main-con">
+                        <p class="about-main-con-title">pozwolenia</p>
+                        <p class="about-main-con-subtitle">Licencje, pozwolenia</p>
+                        <p class="about-main-con-text">
+                            Posiadamy wykształcenie kierunkowe, szereg kursów oraz <br> 
+                            licencje konwojenta zwierząt, dodatkowo pozwolenie TYPU II na <br> 
+                            transport zwierząt powyżej 8 godzin na terenie całej Unii <br> 
+                            europejskiej. Dzięki decyzji z Regionalnej Dyrekcji ochrony <br> 
+                            środowiska możemy również przemieszczać zwierzęta gatunków <br> 
+                            objętych ścisłą ochroną.
+                        </p>
+                    </div>
+                    <div id="about-main-con-2" class="about-main-con">
+                        <p class="about-main-con-title">sprzęt</p>
+                        <p class="about-main-con-subtitle">Wyposażenie</p>
+                        <p class="about-main-con-text">
+                            Posiadamy nowoczesny oraz atestowany sprzęt służący do <br> 
+                            zabezpieczania oraz transportu wszystkich gatunków <br> 
+                            zwierząt, również tych niebezpiecznych oraz agresywnych. <br> 
+                            Nasze dedykowane klatki, skrzynie oraz kontenery są <br> 
+                            bezpieczne dla zwierząt i zgodne z normami LAR (Live <br> 
+                            Animals Regulations).
+                        </p>
+                    </div>
+                    </div>
+                    <div class="about-sec-2" data-aos="zoom-in-up" data-aos-duration="10000">
+                    <div id="about-main-con-3" class="about-main-con">
+                        <p class="about-main-con-title">pojazdy</p>
+                        <p class="about-main-con-subtitle">Flota transportowa</p>
+                        <p class="about-main-con-text">
+                            W Skład naszej floty transportowej wchodzą samochody jak <br>
+                            i przyczepy przystosowane do transportu różnych gatunków <br> 
+                            zwierząt. Każdy pojazd jest zatwierdzony przez Powiatowy <br> 
+                            inspektorat weterynarii do transportu zwierząt powyżej 8 godzin <br> 
+                            spełniając normy zawarte w rozporządzeniu (WE) NR 1/2005 <br> 
+                            z dnia 22 grudnia 2004 r. w sprawie ochrony zwierząt podczas transportu.
+                        </p>
+                    </div>
+                    <div id="about-main-con-4" class="about-main-con">
+                        <img src="img/fs_1_auto.png" id="about-main-img">
+                    </div>
+                    </div>
+                </section>
+                <section class="about-gallery">
+                    <div class="gallery-line-1" data-aos="fade-in-down" data-aos-duration="10000">
+                        <div class="about-img-1" src="img/fs_1_galeria1.png" alt="Błąd: Nie udało się załadować obrazka."></div>
+                        <div class="about-img-2" src="img/fs_1_galeria2.png" alt="Błąd: Nie udało się załadować obrazka."></div>
+                        <div class="about-img-3" src="img/fs_1_galeria3.png" alt="Błąd: Nie udało się załadować obrazka."></div>
+                        <div class="about-img-4" src="img/fs_1_galeria4.png" alt="Błąd: Nie udało się załadować obrazka."></div>
+                    </div>
+                    <p class="gallery-title">
+                        Przewozimy wszystkie gatunki zwierząt zawsze dostosowujemy flotę oraz <br> 
+                        wyposażenie do potrzeb danego zwierzęcia.
+                    </p>
+                    <div class="gallery-line-2" data-aos="fade-in-up" data-aos-duration="10000">
+                        <div class="about-img-5" src="img/fs_1_galeria5.png" alt="Błąd: Nie udało się załadować obrazka."></div>
+                        <div class="about-img-6" src="img/fs_1_galeria6.png" alt="Błąd: Nie udało się załadować obrazka."></div>
+                        <div class="about-img-7" src="img/fs_1_galeria7.png" alt="Błąd: Nie udało się załadować obrazka."></div>
+                        <div class="about-img-8" src="img/fs_1_galeria8.png" alt="Błąd: Nie udało się załadować obrazka."></div>
+                    </div>
+                </section>
+            </section>
+            <footer class="con-footer">
+                <p class="footer-title">skontaktuje się</p>
+                <p class="footer-text">Podchodzimy indywidualnie do każdego transportowanego zwierzaka</p>
+                <p class="footer-subtitle">
+                    Przystosowujemy się do przewozu każdego zwierzęcia indywidualnie. Chcesz dowiedzieć się więcej? <br>
+                    Zapraszamy do kontaktu. Napisz maila klikając w poniższy przycisk lub zadzwoń. <br>
+                    660 540 785 pn-sb 9:00-18:00
+                </p>
+                <div class="footer-button" onclick="goto()">
+                    <p id="button-event-footer">napisz do nas</p>
+                </div>
+                <div class="footer-last">
+                    <section class="footer-box" onclick="fbGoto()" style="cursor: pointer;" target="_blank">
+                        <a href="https://facebook.com/faunaservicepl" class="ft-left" onclick="fbGoto()" style="cursor: pointer;">biuro.faunaservice@gmail.com | facebook</a>
+                    </section>
+                    <a class="ft-right">All rights reserved FaunaService 2021 Made by NamyślakTeam</a>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script>
+        AOS.init();
+    </script>
+</html>
